@@ -1,6 +1,6 @@
 ## Tic Tac Toe
 
-A multiplayer tic tac toe game made using React on the front-end and a NodeJS server on the backend with SocketIO for realtime gameplay communication.
+Tic Tak Toe multiplayer game with SocketIO and React.
 
 ![demo screenshot](./screenshots/tictactoe.gif)
 
@@ -27,3 +27,5 @@ npm run start
 - Open your browser and navigate to [http://localhost:3000/](http://localhost:3000/)
 
 - Start Playing
+
+Since I prefer learning by doing, this is a project that will help me get to know SocketIO and NodeJS better. This is an initial version that will need a lot of improvement.
