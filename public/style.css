@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(50, 50, 50);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.status,
+.restart {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c6a56e;
+  font-size: 3vh;
+  letter-spacing: 1px;
+}
+.restart {
+  visibility: hidden;
+}
+.restart.active {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: 20vh 20vh 20vh;
+  grid-template-columns: 20vh 20vh 20vh;
+}
+
+.square {
+  border: thin solid #c6a56e;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c6a56e;
+  font-size: 12vh;
+  cursor: pointer;
+}
+.square:hover {
+  background: rgb(56, 56, 56);
+}
+.square.deactivated {
+  background: rgb(50, 50, 50);
+  cursor: default;
+}
+.square.winner {
+  background: rgb(39, 39, 39);
+  cursor: default;
+  animation: spin 1s;
+}
+
+@keyframes spin {
+  50% {
+    transform: rotate(360deg) scale(0.9);
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .board {
+    grid-template-rows: 25vw 25vw 25vw;
+    grid-template-columns: 25vw 25vw 25vw;
+  }
+  .square {
+    font-size: 12vw;
+  }
+}
