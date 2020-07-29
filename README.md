@@ -1,6 +1,6 @@
 ## Tic Tac Toe
 
-Tic Tak Toe multiplayer game with SocketIO and React.
+Multiplayer game with SocketIO and React.
 
 ![demo screenshot](./screenshots/tictactoe.gif)
 
